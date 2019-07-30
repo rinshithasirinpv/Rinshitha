@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>amstrong</title>
+	<script type="text/javascript">
+	function amst()
+		{
+		var num=document.getElementById("amstrong").value;
+		d=num;
+	     var s=0;
+	     var rem=0;
+		while(d!=0)
+		{
+		rem=d % 10;
+		s=s+(rem*rem*rem);
+		d=parseInt(d/10);
+		} 
+      
+      if(s==num){
+      	document.write(num+" is an amstrong");
+      }
+      else{
+      	document.write(num+" is not an amstrong" );
+      }
+    }
+	</script>
+</head>
+<form>
+<body>
+	enter a number<input type="text" id="amstrong"><br>
+	<input type="button" name="" value="click" onclick="amst()">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>validation states</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	
+		<form class="form-horizontal">
+			<div class="form-group has-success has-feedback">
+				<label class="col-xs-2 control-label">Password</label>
+				<div class="col-xs-10">
+					<div class="input-group">
+						<span class="input-group-addon">#</span>
+						<input type="Password" class="form-control" placeholder="Your Password">
+					<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+					</div>
+					<span class="help-block">Strong Password</span>
+				</div>
+			</div>
+			<div class="form-group has-warning has-feedback">
+				<label class="col-xs-2 control-label">Password</label>
+				<div class="col-xs-10">
+					<div class="input-group">
+						<span class="input-group-addon">#</span>
+						<input type="Password" class="form-control" placeholder="Your Password">
+					<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+					</div>
+					<span class="help-block">Weak Password</span>
+				</div>
+			</div>
+			<div class="form-group has-error has-feedback">
+				<label class="col-xs-2 control-label">Age</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" placeholder="Your Age">
+					<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+					<span class="help-block">Invalid Age</span>
+				</div>
+			</div>
+		</form>
+	
+</div>
+</body>
+</html>

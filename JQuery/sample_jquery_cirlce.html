@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>circle using jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#circle1").css({'background':'#8a8d22',
+				'color':'white',
+				'height':'200px',
+				'width':'200px',
+				'line-height':'200px',
+				'text-align':'center',
+            }).addClass('circleshape');
+		});
+	</script>
+	<style type="text/css">
+		.circleshape{
+			border-radius:100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="circle1">styled using jquery</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accordion</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-8">
+			<div id="accordion" class="panel-group">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#panel1" data-toggle="collapse" data-parent="#accordion">Asia</a>
+						</h4>
+					</div>
+					<div id="panel1" class="panel-collapse collapse in">
+						<div class="panel-body">
+						<ul>
+							<li>India</li>
+							<li>China</li>
+							<li>Japan</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#panel2" data-toggle="collapse" data-parent="#accordion">North America</a>
+						</h4>
+					</div>
+					<div id="panel2" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+							<li>USA</li>
+							<li>Cannada</li>
+							<li>Mexico</li>
+						</ul>
+						</div>
+					</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#panel3" data-toggle="collapse" data-parent="#accordion">Europe</a>
+						</h4>
+					</div>
+					<div id="panel3" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li>UK</li>
+								<li>France</li>
+								<li>Germany</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

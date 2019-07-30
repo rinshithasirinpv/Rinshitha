@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>using if</title>
+	<script type="text/javascript">
+		var arun=new Array(96,83,50);
+		var midhun=new Array(99,93,50);
+		var tot1=0;
+		var tot2=0;
+		tot1=arun[0]+arun[1]+arun[2];
+		tot2=midhun[0]+midhun[1]+midhun[2];
+		document.write("Marks for: Arun is :"+arun);
+		document.write("<br>total is "+tot1);
+		document.write("<br>Marks :for Midhun is :"+midhun);
+        document.write("<br>total is "+tot2);
+        if(tot1>tot2){
+        	var diff=tot1-tot2;
+        	alert("Arun has got"+diff+"more than Midhun");
+        }
+        var diff=tot2-tot1;
+        alert("Midhun has got "+diff+"more than Arun");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

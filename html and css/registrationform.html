@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			if(document.myform.name.value=="")
+			{
+				alert("please enter your name!");
+				document.myform.name.focus();
+				return false;
+			}
+			if(document.myform.Password.value=="")
+			{
+				alert("please enter your password!");
+				document.myform.Password.focus();
+				return false;
+			}
+           if(document.myform.r1.value=="")
+			{
+				alert("please select your gender!");
+				document.myform.r1.focus();
+				return false;
+			}
+			if(document.myform.email.value=="")
+			{
+				alert("please enter your Email Address!");
+				document.myform.email.focus();
+				return false;
+			}
+			
+			
+			if(document.myform.Address.value=="")
+			{
+				alert("please enter your Address!");
+				document.myform.Address.focus();
+				return false;
+			}
+			if(document.myform.Tel.value=="")
+			{
+			alert("please enter your phone number");
+			document.myform.Tel.focus();
+			return false;	
+			}
+			if(document.myform.Hobbies.value=="")
+			{
+			alert("please select your Hobbies");
+			document.myform.Hobbies.focus;
+			return false;	
+			}
+		}	
+	</script>
+</head>
+<body>
+<form name="myform" onsubmit="return(validate());">
+	<center><table border="0">
+		<caption><b>Customer Regristration</b></caption>
+  <tr><td> Customer Name</td>
+	<td><input type="text" name="name"></td>
+</tr>
+	<tr><td>Password</td>
+	<td><input type="password" name="Password"></td></tr>
+	<tr>
+		<td>Gender</td>
+	<td><input type="radio" name="r1" value="female">female
+	<input type="radio" name="r1" value="male">male</td></tr>
+<tr><td> E-mail</td>
+	<td><input type="text" name="email"></td>
+</tr>
+	<tr><td>Address</td>
+	<td><textarea rows="5" cols="15" name="Address"></textarea></td>
+</tr>
+	<tr><td>Telephone</td>
+	<td><input type="text" name="Tel"></td>
+</tr>
+	<tr><td>Hobbies</td>
+	<td><select name="Hobbies">
+		<option></option>
+		<option value="reading">reading</option>
+		<option value="cooking">cooking</option>
+		<option value="singing">singing</option>
+		<option value="sleeping">sleeping</option>
+	</select></td>
+</tr>
+	<tr>
+		<td><input type="submit" value="submit"></td>
+		
+</tr>
+
+</table>
+</center
+</form>
+</body>
+</html>

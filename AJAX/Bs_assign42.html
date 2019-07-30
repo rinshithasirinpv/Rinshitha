@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tabs</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row"><br>
+		<div class="col-xs-12">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#hometab" data-toggle="tab">Home</a></li>
+				<li><a href="#contacttab" data-toggle="tab">Contact</a></li>
+				<li><a href="#" class="dropdown" data-toggle="dropdown">location<b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                   	<li><a href="#indiatab" data-toggle="tab">India</a></li>
+                   	<li><a href="#usatab" data-toggle="tab">Usa</a></li>
+                   </ul>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="hometab" class="tab-pane active in fade">
+					<h3>Home Page</h3>
+					<p>Home Page Content</p>
+				</div>
+				<div id="contacttab" class="tab-pane fade">
+					<h3>Contact Page</h3>
+					<p>contact Page Content</p>
+				</div>
+				<div id="indiatab" class="tab-pane fade">
+					<h3>india Page</h3>
+					<p>india Page Content</p>
+				</div>
+				<div id="usatab" class="tab-pane fade">
+					<h3>Usa Page</h3>
+					<p>Usa Page Content</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

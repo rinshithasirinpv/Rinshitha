@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script type="text/javascript">
+			function validate(){
+				flag=0;
+				var cname = document.myform.name.value;
+				if(cname == ""){
+					document.getElementById("lbl_name").innerHTML="please Enter name";
+					document.myform.name.style.borderColor="red";
+					flag++;
+				}
+				else{
+					document.getElementById("lbl_name").innerHTML="";
+					document.myform.name.style.borderColor="initial";
+				}
+				pass=document.myform.Password.value;
+				if(pass == ""){
+					document.getElementById("lbl_pass").innerHTML="please enter your password";
+					document.myform.Password.style.borderColor="red";
+					flag++;
+				}
+				else if(pass.length<8){
+					document.getElementById("lbl_pass").innerHTML="please enter minimum 8 characters";
+					document.myform.Password.style.borderColor="red";
+				}
+				else{
+					document.getElementById("lbl_pass").innerHTML="";
+					document.myform.Password.style.borderColor="initial";
+				}
+               email = document.myform.txt_email.value;
+               	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                console.log(reg.test(email));
+               	if(!reg.test(email)){
+               		document.getElementById("lbl_email").innerHTML="please enter valid E-mail";
+					document.myform.txt_email.style.borderColor="red";
+					flag++;
+               	}
+               	else{
+					document.getElementById("lbl_email").innerHTML="";
+					document.myform.txt_email.style.borderColor="initial";
+				}
+                tel = document.myform.txt_tel.value;
+                if(tel == ""){
+					document.getElementById("lbl_tel").innerHTML="please enter your Telephone number";
+					document.myform.txt_tel.style.borderColor="red";
+					flag++;
+				}
+				var ph=/^[0-9]$/;
+				console.log(ph.test(tel));
+               	if(!ph.test(email)){
+               		document.getElementById("lbl_tel").innerHTML="please enter valid number";
+					document.myform.txt_tel.style.borderColor="red";
+					flag++;
+               	}
+				else{
+					document.getElementById("lbl_tel").innerHTML="";
+					document.myform.txt_tel.style.borderColor="initial";
+				}
+
+				if(flag>0){
+					return false;
+				}
+		    }
+		</script>
+
+</head>
+<body>
+<form name="myform" onsubmit="return validate()">
+	<center><table border="0">
+	<caption><b>Customer Regristration</b></caption>
+<tr><td><label> Customer Name</label></td>
+	<td><input type="text" name="name"></td>
+	<td><label id="lbl_name"></label></td>
+</tr>
+<tr><td>Password</td>
+	<td><input type="password" name="Password"></td>
+	<td><label id="lbl_pass"></label></td>
+</tr>
+<tr>
+	<td>Gender</td>
+	<td><input type="radio" name="r1" value="female">female
+	<input type="radio" name="r1" value="male">male</td>
+</tr>
+<tr><td> E-mail</td>
+	<td><input type="text" id="txt_email"></td>
+	<td><label id="lbl_email"></label></td>
+</tr>
+	<tr><td>Address</td>
+	<td><textarea rows="5" cols="15" name="Address"></textarea></td>
+</tr>
+	<tr><td>Telephone</td>
+	<td><input type="text" name="txt_tel"></td>
+	<td><label id="lbl_tel"></label></td>
+</tr>
+<tr><td>Hobbies</td>
+	<td><select name="Hobbies">
+		<option></option>
+		<option value="reading">reading</option>
+		<option value="cooking">cooking</option>
+		<option value="singing">singing</option>
+		<option value="sleeping">sleeping</option>
+	    </select>
+	</td>
+</tr>
+<tr>
+	<td><input type="button" value="submit" onclick="return validate()"></td>
+</tr>
+</table></center>
+</form>
+</body>
+</html>

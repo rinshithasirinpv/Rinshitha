@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scope of variable</title>
+	<script type="text/javascript">
+		var a="apple";
+		document.write("<h2>Global</h2>");
+		function sample(){
+			document.write(a+" inside function<br><br>");
+		}
+		sample();
+		document.write(a+" outside function<br>");
+     document.write("<h2>Local</h2>");
+     sample();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

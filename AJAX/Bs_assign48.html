@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scrollspy method</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	#main_div{
+    		padding-top: 40px;
+    	}
+    	img{
+    		width: 700px;
+    	}
+    	body{
+    		position: relative;
+    	}	
+    </style>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('body').scrollspy({
+    			target : '#main_nav';
+                offset : 10;
+    		});
+    	});
+    </script>
+</head>
+<body data-spy="scroll">
+	<nav id="main_nav" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		<div class="header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#divNav">
+           	<span class="icon-bar"></span>
+           	<span class="icon-bar"></span>
+           	<span class="icon-bar"></span>
+           </button>
+		</div>
+		<div id="divNav" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#div_desert">Desert</a></li>
+				<li><a href="#div_tulips">Tulips</a></li>
+				<li><a href="#div_lighthouse">Light House</a></li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Animals 
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#div_cat">Cat</a></li>
+						<li><a href="#div_penguin">Penguin</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+	<div class="container" id="main_div">
+		<div id="div_desert" class="divStyle">
+			<h1>Desert</h1>
+			<img src="desert.jpeg" class="img-responsive">
+		</div>
+		<div id="div_tulips" class="divStyle">
+			<h1>Tulips</h1>
+			<img src="whitetulips.jpg" class="img-responsive">
+		</div>
+		<div id="div_lighthouse" class="divStyle">
+			<h1>Light House</h1>
+			<img src="lighthouse.jpg" class="img-responsive">
+		</div>
+		<div id="div_cat" class="divStyle">
+			<h1>Cat</h1>
+			<img src="cat.jpeg" class="img-responsive">
+		</div>
+		<div id="div_penguin" class="divStyle">
+			<h1>Penguin</h1>
+			<img src="penguin.jpg" class="img-responsive">
+		</div>
+	</div>
+</body>
+</html>

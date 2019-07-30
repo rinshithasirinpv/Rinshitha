@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					url:'http://dummy.restapiexample.com/api/v1/employee/1',
+					type:'GET',
+					data:{},
+					success:function(empdetails){
+						console.log(empdetails);
+                        
+					},
+					error:function(error){
+						console.log(error);
+					}
+				});
+			});
+		</script>
+	
+</head>
+<body>
+<form>
+	Enter employee id<input type="text" id="emp_id">
+</form>
+</body>
+</html>

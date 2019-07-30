@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collapse</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('#btn_toggle').click(function(){
+    			$('#image_gallery').collapse('toggle');
+    		});
+    		$('#btn_hide').click(function(){
+    			$('#image_gallery').collapse('hide');
+    		});
+    		$('#btn_show').click(function(){
+    			$('#image_gallery').collapse('show');
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<button type="button" id="btn_toggle" class="btn btn-primary" data-toggle="collapse">Toggle Image Gallery</button>
+				<button type="button" id="btn_hide" class="btn btn-primary" data-toggle="collapse">Hide Image Gallery</button>
+				<button type="button" id="btn_show" class="btn btn-primary" data-toggle="collapse">Show Image Gallery</button>
+			</div>
+			<div class="panel-body" id="image_gallery" collapse>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="/myprojects/Ajax/img1.jpg" class="thumbnail">
+					<p>tulips</p>
+					<img src="img1.jpg" img-responsive>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-4">
+				<a href="/myprojects/Ajax/img2.jpg" class="center-block thumbnail">
+					<p>tulips</p>
+					<img src="img2.jpg" img-responsive>
+				</a>
+			</div>
+			 <div class="col-md-4 col-sm-6 col-lg-3">
+	            <a href="/myprojects/AJAX/img7.jpg" class="center-block thumbnail"><p>Flower3</p>
+		          <img src="img7.jpg" img-responsive>
+		      </a>
+            </div>
+		   </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

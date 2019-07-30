@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chaining</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+				$(".slide").slideDown(1000).slideUp(2000);
+			});
+		});
+		</script>
+		<style type="text/css">
+			.slide{
+				display: none;
+				text-align: center;
+				padding: 50px;
+			}
+			
+		</style>
+	
+</head>
+<body>
+<button>click to slide up & down</button>
+<div class="slide"><p>jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code</p></div>
+</body>
+</html>

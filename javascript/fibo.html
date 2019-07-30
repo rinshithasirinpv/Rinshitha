@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fibonacci</title>
+	<script type="text/javascript">
+		var fib1=0;
+		var fib2=1;
+		var count=2;
+		var limit=prompt("enter a number");
+		document.write("fibonacci series is :<br>");
+		document.write(fib1+" ");
+		document.write(fib2+" ");
+		while(count<=limit){
+			var fib3=fib1+fib2;
+			document.write(fib3+" ");
+            count++;
+            fib1=fib2;
+            fib2=fib3;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

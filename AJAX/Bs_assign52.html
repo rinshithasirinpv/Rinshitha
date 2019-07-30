@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Carousel multi columns</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#imageCarousel').carousel();
+	})
+</script>
+<body>
+<div class="container">
+	<div class="row">
+		<br><br><br>
+		<div class="col-xs-12">
+			<div id="imageCarousel" class="carousel slide" data-interval="2000" data-ride="carousel" data-pause="hover" data-wrap="true">
+				<ol class="carousel-indicators">
+						<li class="active" data-target="#imageCarousel" data-slideto="0"></li>
+						<li data-target="#imageCarousel" data-slideto="1"></li>
+						<li data-target="#imageCarousel" data-slideto="2"></li>
+					</ol>
+					<div class="carousel-inner">		
+			        	<div class="item active">
+			        		<div class="row">
+			        			<div class="col-xs-4">
+				                <img src="chrysanthemum.jpg" class="img-responsive">
+				                <div class="carousel-caption">
+					                <h4>Chrysanthemum</h4>
+					                <p>Beautiful Chrysanthemum</p>
+				                </div>
+				            </div>
+			        		<div class="col-xs-4">
+			        			<img src="desert.jpeg" class="img-responsive">
+				                <div class="carousel-caption">
+				                	<h4>Desert</h4>
+					                <p>Beautiful Desert</p>
+				                </div>
+				            </div>
+				        <div class="col-xs-4">
+				        <img src="lighthouse.jpg" class="img-responsive">
+				        <div class="carousel-caption">
+					        <h4>Light House</h4>
+					        <p>Beautiful Light House</p>
+				        </div>
+			        </div>
+				</div>
+			</div>
+			<div class="item">
+			<div class="row">
+			     <div class="col-xs-4">
+				    <img src="penguin.jpg" class="img-responsive">
+				                <div class="carousel-caption">
+					                <h4>Penguin</h4>
+					                <p>Discription of penguin</p>
+				                </div>
+				            </div>            
+			        		<div class="col-xs-4">
+			        			<img src="img4.png" class="img-responsive">
+				                <div class="carousel-caption">
+				                	<h4>FLower</h4>
+					                <p>Beautiful Flower</p>
+				                </div>
+				            </div>
+				        <div class="col-xs-4">
+				        <img src="img3.jpg" class="img-responsive">
+				        <div class="carousel-caption">
+					        <h4>Red flower</h4>
+					        <p>Beautiful Red Flower</p>
+				        </div>
+			        </div>
+				</div>   			
+			</div>
+        <div class="item">
+			<div class="row">
+			     <div class="col-xs-4">
+				    <img src="img7.jpg" class="img-responsive">
+				                <div class="carousel-caption">
+					                <h4>Coulorfull</h4>
+					                <p>Coulorfull flowers</p>
+				                </div>
+				            </div>            
+			        		<div class="col-xs-4">
+			        			<img src="img5.jpg" class="img-responsive">
+				                <div class="carousel-caption">
+				                	<h4>FLower</h4>
+					                <p>Beautiful Flower</p>
+				                </div>
+				            </div>
+				        <div class="col-xs-4">
+				        <img src="img8.jpg" class="img-responsive">
+				        <div class="carousel-caption">
+					        <h4>White flower</h4>
+					        <p>Beautiful White Flower</p>
+				        </div>
+			        </div>
+				</div>   			
+			</div>
+        </div>
+	</div>
+	</div>
+	</div>
+	<a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a href="#imageCarousel" class="carousel-control right" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+</div>
+</div>
+</body>
+</html>

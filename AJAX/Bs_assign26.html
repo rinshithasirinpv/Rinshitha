@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button in input group</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+		<form class="form-horizontal">
+			<br>
+	    <div class="col-lg-4">
+			<div class="from-group">
+					<div class="input-group">
+						<input type="text" placeholder="Default" class="form-control">
+					<span class="input-group-btn">
+                        <button type="button" class="btn btn-default">Search</button>
+					</span>
+				   </div>
+			    </div>
+			   <br>
+		    <div class="from-group">
+					<div class="input-group">
+						<input type="text" placeholder="Default" class="form-control">
+					<div class="input-group-btn">
+                        <button type="button" class="btn btn-default">Drop down</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown-toggle">
+                        	<span class="caret"></span>
+                        	<ul class="dropdown-menu">
+                        		<li><a href="#">Action 1</a></li>
+                        		<li><a href="#">Action 2</a></li>
+                        		<li><a href="#">Action 3</a></li>
+                        	</ul>
+                        </button>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="from-group">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Default">
+					<div class="input-group-btn">
+                        <button type="button" class="btn btn-default">Cut</button>
+                        <button type="button" class="btn btn-default">Copy</button>
+                        <button type="button" class="btn btn-default">Paste</button>
+					</div>
+				</div>
+			</div>
+	  </div>
+	</form>
+</div>
+</body>
+</html>

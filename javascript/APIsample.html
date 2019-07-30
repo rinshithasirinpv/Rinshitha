@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajax</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.ajax({
+				url:'http://dummy.restapiexample.com/api/v1/employees',
+				type:'GET',
+				data:{},
+				success:function(employees){
+                 console.log(employees);
+                //coverting json object to javascript object
+                employee_obj=JSON.parse(employees);
+                //console.log(employee_obj[0].id)//just access frst one here
+                for(emp=0;emp<employee_obj.length;emp++){
+                	$('table').append(
+                		'<tr><td>'+employee_obj[emp].id+
+                		'</td><td>'+employee_obj[emp].employee_name+
+                		'</td><td>'+employee_obj[emp].employee_salary+
+                		'</td><td>'+employee_obj[emp].employee_age+
+                		'</td><td>'+employee_obj[emp].profile_image+
+                		'NO Image</td></tr>'
+                		);
+                }
+				},
+				error:function(error){
+					console.log(error);
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		tr{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+<table cellpadding="5px" cellspacing="5px">
+	<tr>
+		<th>Employee id</th>
+		<th>Employee Name</th>
+		<th>Salary</th>
+		<th>Age</th>
+		<th>image</th>
+	</tr>
+</table>
+</body>
+</html>

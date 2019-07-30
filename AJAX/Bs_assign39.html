@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accordion arrow</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.collapse').on('shown.bs.collapse',function(){
+    			$(this).parent().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+    		}).on('hidden.bs.collapse',function(){
+    			$(this).parent().find('.glyphicon-menu-up').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+    		});
+    	});
+    </script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="panel-group">
+				<div id="accordion">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						<h4 class="panel-title"><a href="#panel1" data-toggle="collapse" data-parent="#accordion">
+						<span class="glyphicon glyphicon-menu-up"></span>Asia</a></h4>
+					</div>
+					<div id="panel1" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<ul>
+								<li>india</li>
+								<li>china</li>
+								<li>japan</li>
+							</ul>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="panel panel-primary">
+			    	<div class="panel-heading">
+			    		<h4 class="panel-title"><a href="#panel2" data-toggle="collapse" data-parent="#accordion">
+			    			<span class="glyphicon glyphicon-menu-down"></span> North America</a></h4>
+			    	</div>
+			    	<div id="panel2" class="panel-collapse collapse">
+			    		<div class="panel-body">
+			    			<ul>
+			    				<li>UK</li>
+			    				<li>Canada</li>
+			    				<li>Mexico</li>
+			    			</ul>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="panel panel-primary">
+			    	<div class="panel-heading">
+			    		<h4 class="panel-title"><a href="#panel3" data-toggle="collapse" data-parent="#accordion">
+			    		<span class="glyphicon glyphicon-menu-down"></span> Europe</a></h4>
+			    	</div>
+			    	<div id="panel3" class="panel-collapse collapse">
+			    		<div class="panel-body">
+			    			<ul>
+			    				<li>Germany</li>
+			    				<li>France</li>
+			    				<li>Italy</li>
+			    			</ul>
+			    		</div>
+			    	</div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>radio button validation</title>
+	<style type="text/css">
+		div{
+		width: 350px; 
+		height:200px; 
+		background-color:#00ffff;
+	}
+	
+	</style>
+	<script type="text/javascript">
+     function validate(){
+		var male=document.getElementById('male').checked;
+		var female=document.getElementById('female').checked;
+	    if(male == false && female == false){
+		document.getElementById('pop').innerHTML="choose your gender";
+			return false;
+		}
+		else{
+             return true;
+		}
+	}
+	</script>
+</head>
+<body><div >
+	<center><h2>Radio Button Validation</h2></center>
+<form name="radio_check" method="get" onsubmit="return validate()">
+	<table border="0" cellpadding="12px" cellspacing="8px">
+	<tr><td>Gender:</td>
+	<td><input type="radio" name="gender" id="male" value="Male">Male</td>
+	<td><input type="radio" name="gender" id="female" value="Female">Female</td>
+	</tr>
+	<tr><td colspan="3" align="center"><label id="pop" style="color: red;"></label></td></tr>
+	<tr><td></td><td><input type="submit" name="button" value="submit">
+</td></tr>
+</form></div>
+</body>
+</html>

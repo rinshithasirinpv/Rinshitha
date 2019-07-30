@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>regform</title>
+	<script type="text/javascript">
+		function update(){
+		var fname=document.getElementById('fname');
+     var lname=document.getElementById('lname');
+     var email=document.getElementById('email');
+     var pass=document.getElementById('pass');
+     var parag=document.getElementById('para');
+     parag.innerHTML="Welcome "+fname.value+lname.value+"."+"My Email Id is "+email.value;
+ }
+	</script>
+</head>
+<body>
+<form name="registration">
+	First Name:<input type="text" id="fname"><br><br>
+	Last Name:<input type="text" id="lname"><br><br>
+	Email Id:<input type="text" id="email"><br><br>
+	Password:<input type="Password" id="pass"><br><br>
+	<input type="button" name="button" value="SignUp" onclick="update()">
+</form>
+<p id="para"></p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Affix</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	body{
+    		position: relative;
+    	}
+    	img{
+    		width: 700px;
+    	}
+    	.affix{
+    		top:20px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="xs-12">
+				<div class="jumbotron">
+					<h1>Bootstrap Affix</h1>
+				</div>
+			</div>
+			<div class="col-xs-3">
+			    <nav id="mainNav">
+			    	<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+			           <li class="active"><a href="#div_desert">Desert</a></li>
+			           <li><a href="#div_tulips">Tulips</a></li>
+			           <li><a href="#div_lighthouse">Light House</a></li>
+			           <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				       Animals <span class="caret"></span></a>
+				       <ul class="dropdown-menu">
+					      <li><a href="#div_cat">Cat</a></li>
+					      <li><a href="#div_penguin">Penguin</a></li>
+				    </ul>
+			       </li>
+		        </ul>
+			    </nav>
+	        </div>
+	        	<div class="col-xs-9">
+		<div id="div_desert" class="divStyle">
+			<h1>Desert</h1>
+			<img src="desert.jpeg" class="img-responsive">
+		</div>
+		<div id="div_tulips" class="divStyle">
+			<h1>Tulips</h1>
+			<img src="whitetulips.jpg" class="img-responsive">
+		</div>
+		<div id="div_lighthouse" class="divStyle">
+			<h1>Light House</h1>
+			<img src="lighthouse.jpg" class="img-responsive">
+		</div>
+		<div id="div_cat" class="divStyle">
+			<h1>Cat</h1>
+			<img src="cat.jpeg" class="img-responsive">
+		</div>
+		<div id="div_penguin" class="divStyle">
+			<h1>Penguin</h1>
+			<img src="penguin.jpg" class="img-responsive">
+		</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changing Image</title>
+	<script type="text/javascript">
+		image_tracker='r';
+		function change(){
+			var flower=document.getElementById("rose");
+			if(image_tracker == 'r'){
+			flower.src="whitetulips.jpg";
+			image_tracker='w';
+		}
+		else{
+			flower.src="rosetulips.jpg";
+			image_tracker='r';
+		}
+		}
+	</script>
+</head>
+<body>
+<img src="rosetulips.jpg" alt="rosetulips" id="rose" onclick="change();">
+</body>
+</html>
