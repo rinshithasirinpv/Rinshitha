@@ -4,8 +4,8 @@
 	<title>check box validation</title>
 	<style type="text/css">
 		div{
-		width: 350px; 
-		height:200px; 
+		width: 400px; 
+		height:180px; 
 		background-color:#00ffff;
 	}
 	
@@ -24,17 +24,22 @@
 	}
 	</script>
 </head>
-<body><div >
+<body>
+	<div >
 	<center><h2>Check Box Validation</h2></center>
-<form name="radio_check" method="get" onsubmit="return validate()">
-	<table border="0" cellpadding="8px" cellspacing="3px">
-	<tr><td>Qualification:</td>
-	<td><input type="checkbox" name="gender" id="graduate" value="graduate">Graduate</td>
-	<td><input type="checkbox" name="gender" id="pg" value="pg">Post Graduate</td>
+        <form name="radio_check" method="get" onsubmit="return validate()">
+	<table align="center" border="0" cellpadding="8px" cellspacing="3px">
+	<tr>
+		<td>Qualification:</td>
+	        <td><input type="checkbox" name="gender" id="graduate" value="graduate">Graduate</td>
+	        <td><input type="checkbox" name="gender" id="pg" value="pg">Post Graduate</td>
 	</tr>
-	<tr><td colspan="3" align="center"><label id="pop" style="color: red;"></label></td></tr>
-	<tr><td></td><td><input type="submit" name="button" value="submit">
-</td></tr>
+	<tr>
+		<td colspan="3" align="center"><label id="pop" style="color: red;"></label></td>
+	</tr>
+	<tr>
+		<td></td><td><input type="submit" name="button" value="submit"></td>
+	</tr>
 </form></div>
 </body>
 </html>
